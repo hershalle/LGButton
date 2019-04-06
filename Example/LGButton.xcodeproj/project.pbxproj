@@ -132,7 +132,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				8FB5333CC17FF08BF956E10A /* [CP] Embed Pods Frameworks */,
-				2B14002810DF2BF7213EE583 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,21 +189,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B14002810DF2BF7213EE583 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LGButton_Example/Pods-LGButton_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7B6DD2AC31A903DA603ABF91 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,7 +213,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LGButton_Example/Pods-LGButton_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LGButton_Example/Pods-LGButton_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -238,7 +222,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LGButton_Example/Pods-LGButton_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LGButton_Example/Pods-LGButton_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
