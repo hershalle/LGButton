@@ -363,7 +363,7 @@ open class LGButton: UIControl {
     // MARK:
     public var attributedString: NSAttributedString? {
         didSet {
-            titleLbl.attributedText = attributedString
+            setupTitle()
         }
     }
     
@@ -498,6 +498,9 @@ open class LGButton: UIControl {
             titleLbl.font = UIFont.init(name:titleFontName! , size:titleFontSize)
         }else{
             titleLbl.font = UIFont.systemFont(ofSize: titleFontSize)
+        }
+        if let attributedString = attributedString {
+            titleLbl.attributedText = attributedString
         }
     }
     
